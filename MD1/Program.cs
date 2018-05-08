@@ -11,21 +11,23 @@ namespace MD1
         static void Main(string[] args)
         {
             int rezultats = Aprekins();
-            Izvade(rezultats);
+            Console.WriteLine("Summa: " + rezultats);
+            Izvade();
             Console.Read();
         }
 
         static int Aprekins()
         {
-            Console.Write("Ievadiet pirmo skaitli: ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Ievadiet otro skaitli: ");
-            int b = Convert.ToInt32(Console.ReadLine());
+            int a = 2;
+            int b = 10;
             return a + b;
         }
 
-        static void Izvade(int vertiba)
+        static void Izvade()
         {
+            int a = 2;
+            int b = 10;
+            int vertiba = a + b;
             Console.WriteLine("Summa: " + vertiba);
         }
 
